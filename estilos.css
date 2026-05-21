@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #D4AF37;
+    width: 100%;
+}
+
+.mini-logo {
+    width: 150px;
+    height: auto;
+}
+
+.logo-texto {
+    font-weight: bold;
+    font-size: 22px;
+    color: #D4AF37;
+    margin-left: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover, .nav a.active {
+    color: #D4AF37;
+}
+
+.hero, .seccion-blog, .seccion-catalogo, .seccion-contacto, .seccion-studio {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.titulo-seccion {
+    color: #D4AF37;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.descripcion-studio {
+    font-size: 16px;
+    color: #B0B0B0;
+    margin-bottom: 30px;
+}
+
+.logo-grid {
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    animation: rotacion 16s linear infinite;
+}
+
+@keyframes rotacion {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.boton-dorado {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #D4AF37;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px; 
+    transition: transform 0.3s ease;
+}
+
+.boton-dorado:hover {
+    transform: scale(1.05);
+}
+
+.grid-blog, .grid-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tarjeta-post, .tarjeta-producto {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    padding: 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-post:hover, .tarjeta-producto:hover {
+    transform: translateY(-10px);
+    border-color: #D4AF37;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.tarjeta-post h3, .tarjeta-producto h3 {
+    color: #D4AF37;
+    margin-bottom: 5px;
+}
+
+.contenedor-formulario {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grupo-formulario {
+    border: 1px solid #333333;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    text-align: left;
+}
+
+.leyenda-formulario {
+    color: #D4AF37;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.grupo-formulario label {
+    display: block;
+    color: #E0E0E0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.grupo-formulario input, .grupo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #121212;
+    border: 1px solid #333333;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.boton-enviar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #D4AF37;
+    color: #121212;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333333;
+    font-size: 13px;
+    color: #666666;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    
+    .nav {
+        gap: 25px;
+    }
+    
+    .hero, .seccion-blog, .seccion-catalogo, .seccion-contacto, .seccion-studio {
+        padding-top: 200px;
+    }
+    
+    .titulo-principal {
+        font-size: 45px;
+    }
+    
+    .grid-blog, .grid-productos {
+        grid-template-columns: 1fr 1fr;
+    }
+}

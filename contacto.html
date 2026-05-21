@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Urban Ink</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-contenedor">
+            <img src="logo.png" alt="Logo" class="mini-logo">
+            <span class="logo-texto">URBAN INK</span>
+        </div>
+        <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Servicios</a>
+    <a href="studio.html">Pedidos</a>
+    <a href="blog.html">Blog</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+    </header>
+
+    <main class="seccion-contacto">
+        <div class="contenedor-formulario">
+            <h2 class="titulo-seccion">CONTACTA CON NOSOTROS</h2>
+            
+            <div class="tarjeta-producto" style="margin-bottom: 30px; text-align: center;">
+                <h3>Atención Directa</h3>
+                <p style="margin-bottom: 8px; color: #FFFFFF;"><strong>WhatsApp:</strong> +34 600 000 000</p>
+                <p style="margin-bottom: 8px; color: #FFFFFF;"><strong>Correo:</strong> info@urbanink.com</p>
+                <p style="color: #FFFFFF;"><strong>Taller:</strong> Calle industrial, Nº 4, Madrid</p>
+            </div>
+
+            <form action="#" method="POST">
+                <fieldset class="grupo-formulario">
+                    <legend class="leyenda-formulario">Atención al Cliente</legend>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" id="email" placeholder="tu@email.com" required>
+                    
+                    <label for="mensaje">¿En qué podemos ayudarte?:</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escribe aquí tu duda general..." required></textarea>
+                    
+                    <button type="submit" class="boton-enviar">ENVIAR CONSULTA</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Urban Ink. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
