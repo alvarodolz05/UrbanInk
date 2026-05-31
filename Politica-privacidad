@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Aferta SG</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main style="padding: 40px; max-width: 800px; margin: 0 auto; font-family: sans-serif;">
+        <h1>Política de Privacidad</h1>
+        <p>De conformidad con el Reglamento General de Protección de Datos (RGPD) y la LOPDGDD, se informa a los usuarios de que los datos personales recogidos a través del formulario de contacto serán tratados por Aferta SG de forma confidencial.</p>
+        <p>La finalidad de la recogida de datos es únicamente responder a sus dudas y tramitar presupuestos personalizados de impresión. No se cederán datos a terceros salvo por obligación legal. El usuario puede ejercer en cualquier momento sus derechos de acceso, rectificación o supresión de datos escribiendo a nuestro correo de contacto.</p>
+        <p><a href="index.html">← Volver al Inicio</a></p>
+    </main>
+</body>
+</html>
